@@ -176,6 +176,24 @@ console.log(
     )(2)
 );
 
+// [1, -8, -5, 2, -5, 6]
+//     .filter( item => item > 0 )
+//     .map( item => item * 10 )
+//     .reduce((prev, item) => item + prev, 0)
+
+let filter = cb => list => list.filter(cb);
+// let map = cb => list => list.map(cb);
+// let reduce = (cb, sum) => list => list.reduce(cb, sum);
+
+// let res2 = compose(
+//     filter(item => item > 0),
+//     map(item => item * 10),
+//     reduce((prev, item) => item + prev, 0)
+// )([1, -8, -5, 2, -5, 6]);
+
+// console.log(res2);
+
+
 // R.compose()
 // R.pipe()
 
